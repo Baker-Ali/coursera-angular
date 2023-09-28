@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
     <title>Coursera\angular</title>
-</head>
-<body>
-    Hello Boss !
-</body>
+  </head>
+  <body>
+    <div ng-app="mod1">
+        <div ng-controller="myctl">
+            to upper case : <input type="text" ng-model="name"/><br>
+            this is : {{name | uppercase}}
+        </div>
+    </div>
+  </body>
 </html>
